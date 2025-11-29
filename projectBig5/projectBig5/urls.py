@@ -19,7 +19,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('firstApp/', include('firstApp.urls')),
+    path('', include('firstApp.urls')),   # root goes to firstApp
 ]
+
 
 

@@ -1,16 +1,34 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectBig5 Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'firstApp/style.css' %}">
 </head>
 <body>
-   <h1>Group 3 Meta Web Big5 Project</h1> 
+   <h1 class="text-center my-4">Group 3 Meta Web Big5 Project</h1> 
+
+   <!-- Navigation bar -->
+   {% include 'nav.html' %}
+
+   <!-- Content block -->
+   <div class="container my-4">
+       {% block content %}
+       {% endblock %}
+   </div>
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white text-center py-3 mt-5">
+       <p>&copy; 2025 Group 3 Meta Web Big5 Project | Exploring Kenya’s Big Five Wildlife</p>
+   </footer>
+
+   <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
- {% include 'nav.html' %}
-
-    {% block content %}
-
-    {% endblock %}
 </html>
+
