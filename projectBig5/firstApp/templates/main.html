@@ -1,4 +1,5 @@
 {% extends 'index.html' %}
+{% load static %}
 
 {% block content %}
     <div class="text-center">
@@ -29,7 +30,51 @@
     </p>
     </div>
 
-
+    <div id="gallery" class="my-5">
+    <h3 class="text-center mb-4">The Big Five Gallery</h3>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'images/lion.jpg' %}" class="card-img-top" alt="Lion">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Lion</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'images/leopard.jpg' %}" class="card-img-top" alt="Leopard">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Leopard</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'images/elephant.jpg' %}" class="card-img-top" alt="Elephant">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Elephant</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="{% static 'images/rhino.jpg' %}" class="card-img-top" alt="Rhino">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Rhino</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <img src="{% static 'images/buffalo.jpg' %}" class="card-img-top" alt="Buffalo">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Buffalo</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div id="contact" class="my-5">
         <h3>Contact Us</h3>

@@ -40,3 +40,9 @@ footer {
     text-align: center;
     margin-top: 40px;
 }
+footer img {
+    transition: transform 0.2s ease;
+}
+footer img:hover {
+    transform: scale(1.2);
+}
